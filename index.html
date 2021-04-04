@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" MEDIA="screen"> 
+        <meta charset="utf-8">
+        <title>Todo App</title>
+    </HEAD>
+    <body>
+        <header class="header">
+            <img class="header-img" src="./eisenhower-matrix.jpg" alt="">
+            <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+        </header>
+        <main>
+            <article class="todo-part">
+                <section class="section-add-task">
+                    <label for="new-task">Add Item</label> 
+                    <div class="new-task-input">
+                        <input id="new-task" type="text">
+                        <button>Add</button>
+                    </div>
+                </section>
+                <section class="section-todo">
+                   <h3>Todo</h3>
+                   <ul class="ul-list" id="incompleted-tasks">
+                        <li class="ul-list-item">
+                            <input type="checkbox"><label class="task">Pay Bills</label>
+                            <input class="edit-task" type="text">
+                            <button class="edit">Edit</button>
+                            <button class="delete"><img src="./remove.svg" alt="remove-button"></button>
+                        </li>
+                        <li class="edit-mode ul-list-item">
+                            <input type="checkbox"><label class="task">Go Shopping</label>
+                            <input type="text" value="Go Shopping" class="task">
+                            <button class="edit">Save</button>
+                            <button class="delete"><img src="./remove.svg" alt="remove-button"></button>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Completed</h3>
+                    <ul class="ul-list" id="completed-tasks">
+                        <li class="ul-list-item">
+                            <input type="checkbox" checked><label class="task">See the Doctor</label>
+                            <input type="text">
+                            <button class="edit">Edit</button>
+                            <button class="delete"><img src="./remove.svg" alt="remove-button"></button>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
